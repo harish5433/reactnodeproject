@@ -1,0 +1,10 @@
+const express=require("express")
+const router=express.Router()
+const categoryController=require("./../controller/categoryController")
+const checkAuth=require('./../middleware/tokenVerify')
+router.post("/category/add",checkAuth, categoryController.categoryAdd)
+router.get("/category", checkAuth, categoryController.getAllCategory)
+router.get("/category/:id", checkAuth, categoryController.getCategory)
+router.put("/category/update/:id",checkAuth,  categoryController.updateCategory)
+router.delete("/category/delete/:id", checkAuth, categoryController.deleteCategory)
+module.exports=router;

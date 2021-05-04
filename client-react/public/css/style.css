@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #b6fcfc;
+  }
+  .invalid {
+    border: 1px solid #dc3545 !important;
+  }
+  .invalid:focus{
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25) !important;
+  }
+  .nav-bar{
+    background-color: rgb(120, 172, 120);
+    overflow: hidden;
+  }
+  .nav-bar ul{
+    padding:8px;
+  }
+  .nav-bar ul li{
+    list-style-type:none;
+    display:inline-block;
+    padding: 13px 20px;
+    Font-size:20px;
+    text-align:center;
+    color:white;
+  }
+  .nav-bar ul li:hover{
+    background-color: rgb(19, 15, 15);
+    color: rgb(134, 119, 119);
+  }
+  .active {
+    background-color:rgba(12, 2, 7, 0.733);
+    padding: 10px;
+  }
+  /* Add an active class to highlight the current page */
+  .nav-bar ul li.active {
+    background-color: #360bf7;
+    color: white;
+  }
+  .left{
+    float:left;
+  }
+  .right{
+    float:right;
+  }
+  
+  /* footer */
+  .footer{
+    background-color:#514681;
+  }
+  .footer p{
+    color:#12c7d4;
+    font-size:20px;
+    text-align:center;
+    padding:15px;
+  }
+  .tbl{
+    background-color: rgb(151, 163, 172);
+    border-collapse: collapse;
+    width:80%
+  }
+  .tbl, thead, tbody, th, tr, td{
+    border: 1px solid blue;
+    text-align:center
+  }
+  .errorComponent{
+    top:0;
+    padding:0px;
+    text-align:center;
+  }
+  .errorComponent h3{
+    text-align:center;
+    padding:40px;
+  }
+  .preview {
+    display:flex;
+  }
+  .img_show{
+    position: relative;
+  }
+  #close {
+    color:red;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    font-size: 20px;
+    transform: translate(0%, -50%);
+  }
+  #close:hover {background: rgb(31, 168, 122);}
